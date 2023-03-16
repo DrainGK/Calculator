@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+  
+</head>
+<body>
+  <main>
+    <h1 class="title">SPLI<br>TTER</h1>
+    <div class="calculatrice">
+      <div class="calculatrice-container">
+        <div class="calculatrice-container-left">
+          <div class="bill-input input">
+            <label for="bill">Bill</label>
+            <input type="number" name="bill" id="bill" placeholder="0" class="input-calc">
+          </div>
+          <div class="tips-input input">
+            <label for="tips">Select Tip %</label>
+            <div class="tips-button-container" id="tips">
+              <button class="tips-button calcul-button" value="5">5%</button>
+              <button class="tips-button calcul-button" value="10">10%</button>
+              <button class="tips-button calcul-button" value="15">15%</button>
+              <button class="tips-button calcul-button" value="25">25%</button>
+              <button class="tips-button calcul-button" value="50">50%</button>
+              <input type="number"  placeholder="Custom" id="custom-tips" class="custom-tips calcul-button">
+            </div>
+          </div>
+          <div class="number-of-people-input input">
+            <label for="peoples">Number of People</label>
+            <label for="peoples" class="zero">Can't be zero</label>
+            <input type="number"  name="peoples" id="peoples" placeholder="0" class="input-calc" value="">
+          </div>
+        </div>
+        <div class="calculatrice-container-right">
+          <div class="calculatrice-output-wrap">
+            <div class="tips-output-container">
+              <div class="tips-output output">
+                <label for="Tips-bill">
+                  <h2>Tip Amount</h2>
+                  <h3>/ person</h3>
+                </label>
+                <div id="tips-bill" class="price">$0</div>
+              </div>
+              <div class="Total-output output">
+                <label for="Total-bill">
+                  <h2>Total</h2>
+                  <h3>/ person</h3>
+                </label>
+                <div id="Total-bill" class="price">$0</div>
+              </div>
+            </div>
+            <div class="reset-button-container">
+              <button class="reset-button output">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/index.js"></script>
+</body>
+</html>
